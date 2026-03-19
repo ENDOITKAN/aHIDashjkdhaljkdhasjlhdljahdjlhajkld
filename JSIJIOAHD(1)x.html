@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>html,body{margin:0;padding:0;height:100%;} .full{width:100vw;height:100vh;border:none;}</style>
+</head>
 <body>
 
+<div id="embed-status" style="padding:12px; background:#f0f0f0; font-family:system-ui, sans-serif;">Loading iframe…</div>
+<iframe class="full embed" src="https://gn-math.dev" allowfullscreen
+        onload="document.getElementById('embed-status').textContent='Loaded (if you see white, check the browser console for blocking policies).';"
+        onerror="document.getElementById('embed-status').textContent='Iframe failed to load (likely blocked by the site or browser). Open link below to verify.';"
+></iframe>
 
-<embed class="full embed"  src="gn-math.dev" allowfullscreen width="100" height="100"> </embed>
+<p style="margin:12px 0;"><a href="https://gn-math.dev" target="_blank" rel="noopener">Open https://gn-math.dev in a new tab</a></p>
 
+insert ssbu refrences here
 
-
-</body>
-</html>
